@@ -1,0 +1,48 @@
+//
+// Forms
+// --------------------------------------------------
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 13px 22px;
+  font-size: font-size-base;
+  line-height: line-height-base;
+  color: #000;
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 2px solid brand-primary;
+  transition: border-color ease-in-out .15s;
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  &:focus {
+    outline: 0;
+  }
+
+  // Placeholder
+  placeholder(#000);
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: fade(#ccc, 85%);
+    opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: disabled;
+  }
+
+  // Reset height for `textarea`s
+  textarea& {
+    height: auto;
+  }
+}

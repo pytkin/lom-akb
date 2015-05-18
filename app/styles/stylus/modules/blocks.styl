@@ -1,0 +1,721 @@
+//
+// Blocks
+// -------------------------------------------------- //
+
+
+// "Промо блок" на главной странице
+
+.main-promo {
+  background url(../img/main-promo-bg.jpg) right bottom no-repeat #ecf5f4
+  height 598px
+  padding 197px 0 0 59px
+
+  .promo-text {
+    width 470px
+  }
+  .block-title {
+    font-size 36px
+    line-height 41px
+    font-weight 900
+    text-transform uppercase
+    margin 0 0 20px
+
+    small {
+      display block
+      font-size 24px
+      line-height 29px
+      margin-top 17px
+      font-weight normal
+      color #000
+    }
+  }
+  .btn-send-req {
+    position relative
+    display block
+    height 45px
+    background-color brand-primary
+    color #fff
+    text-align center
+    padding-left 45px
+    line-height 45px
+    width 236px
+    font-weight 600
+    text-transform uppercase
+
+    &:before {
+      position absolute
+      content ''
+      top 0
+      left 0
+      background url(../img/paper-plane-icon.png) center no-repeat #3da528
+      width 45px
+      height 45px
+    }
+    &:hover,
+    &:focus {
+      text-decoration none
+    }
+  }
+}
+
+
+// "Сквозное промо" на главной странице
+
+.across-promo {
+  text-align center
+  background-color brand-secondary
+  color #000
+  font-size 24px
+  line-height 29px
+  padding 56px 0 54px
+  text-transform uppercase
+
+  p {
+    margin-bottom 0
+  }
+}
+
+
+// "Наши приемущества" на главной странице
+
+.our-advantages {
+  clearfix()
+
+  .description-col {
+    width 601px
+    float left
+    background  url(../img/advantages-desc-bg.jpg) 82px 522px no-repeat #ecf5f4
+    padding 116px 95px 429px 60px
+
+    p {
+      font-size 18px
+      line-height 23px
+      margin-bottom 20px
+
+      &:last-child {
+        margin-bottom 0
+      }
+    }
+  }
+  .advantages-col {
+    float left
+    width 599px
+    padding 70px 72px 75px 59px
+
+    .block-title {
+      font-size 36px
+      line-height 1
+      font-weight 900
+      text-transform uppercase
+      margin 0 0 41px
+    }
+
+    ul {
+      list-style none
+      padding-left 0
+      margin 0
+      font-size 18px
+      line-height 23px
+
+      li {
+        position relative
+        display block
+        margin-bottom 40px
+        padding-left 60px
+
+        &:last-child {
+          margin-bottom 0
+        }
+
+        .icon {
+          position absolute
+          top 3px
+          left 0
+        }
+      }
+    }
+  }
+}
+
+
+// "Отзывы" на главной странице
+
+.customer-reviews {
+  padding 92px 0 121px
+  background-color brand-secondary
+
+  .block-title {
+    margin 0 0 52px
+    text-align center
+    font-size 36px
+    line-height 1
+    font-weight 900
+    text-transform uppercase
+    color #000
+  }
+  .gallery {
+    width 900px
+    height: 260px
+    margin 0 auto
+
+    .gallery-cell {
+      width 100%
+      height 260px
+      margin-right 10px
+    }
+  }
+  .review-card {
+    background-color #fff
+    clearfix()
+
+    .customer-photo {
+      float left
+      width 260px
+    }
+    .customer-info {
+      float left
+      width 640px
+      padding 41px 65px 0 50px
+
+      .customer-name {
+        text-transform uppercase
+        font-size 18px
+        line-height 23px
+        display block
+        font-weight 600
+      }
+      .customer-position {
+        display block
+        font-size 18px
+        line-height 23px
+        margin-bottom 8px
+      }
+      .review-text {
+        p {
+          margin-bottom 0
+        }
+      }
+    }
+  }
+}
+
+
+// "Последние новости" на главной странице
+
+.latest-news {
+  padding 92px 0 84px
+  clearfix()
+
+  .block-title {
+    margin 0 0 66px
+    text-align center
+    font-size 36px
+    line-height 1
+    font-weight 900
+    text-transform uppercase
+    color #000
+  }
+  .news-list {
+    list-style none
+    margin 0
+    padding 0 60px
+
+    li {
+      display block
+      float left
+      margin 0 30px
+      width 210px
+    }
+  }
+  .news-info {
+    clearfix()
+    font-weight 700
+
+    .badge {
+      display inline-block
+      margin-right 4px
+      line-height 18px
+      height 17px
+      background-color brand-primary
+      color #fff
+      text-transform uppercase
+      padding 0 6px
+      font-size 10px
+    }
+    .publish-time {
+      display inline-block
+      line-height 18px
+      font-size 10px
+      color #000
+      vertical-align middle
+    }
+  }
+  .news-title {
+    font-size 18px
+    text-transform uppercase
+    font-weight 600
+    margin 12px 0;
+  }
+}
+
+
+// Блок "Здать аккумулятор"
+
+.handower-battery {
+  padding 89px 210px 97px
+  background-color #ecf5f4
+
+  .block-title {
+    text-transform uppercase
+    font-size 36px
+    line-height 40px
+    color #000
+    margin 0 0 70px
+    font-weight 900
+    text-align center
+  }
+  .sub-title {
+    text-align center
+    font-size 48px
+    line-height 38px
+    font-weight 800
+
+    small {
+      font-size 24px
+      line-height 1
+      font-weight normal
+      display block
+      margin-bottom 20px
+    }
+  }
+  form {
+    clearfix()
+    margin-bottom 57px
+  }
+  .form-group {
+    width 240px
+    float left
+    margin-right 30px
+  }
+  .btn-send-req {
+    position relative
+    display block
+    float left
+    height 45px
+    background-color brand-primary
+    color #fff
+    text-align center
+    padding-left 45px
+    line-height 45px
+    width 240px
+    font-weight 600
+    text-transform uppercase
+    border none
+
+    &:before {
+      position absolute
+      content ''
+      top 0
+      left 0
+      background url(../img/paper-plane-icon.png) center no-repeat #3da528
+      width 45px
+      height 45px
+    }
+    &:hover,
+    &:focus {
+      text-decoration none
+    }
+  }
+}
+
+
+// "Закупочные цены" на странице закупочные цены
+
+.purchase-prices {
+  background-color #ecf5f4
+  padding 138px 0 78px
+
+  .block-title {
+    font-size 36px
+    line-height 41px
+    width 600px
+    text-align center
+    font-weight 900
+    margin 0 auto 84px
+    text-transform uppercase
+
+    small {
+      font-size 18px
+      font-weight normal
+      margin-top 17px
+      color #000
+      text-transform none
+      display block
+    }
+  }
+  .comparison-sheet {
+    width 900px
+    margin 0 auto
+
+    .table-header {
+      display inline-block
+      margin-left 300px
+      font-weight 900
+      font-size 18px
+      line-height 1
+      margin-bottom 20px
+      text-transform uppercase
+    }
+    table {
+      th,
+      td {
+        &:first-child {
+          border-color transparent
+          border-right-color #c8c8c8
+          width 300px
+        }
+      }
+      th {
+        padding 19px 0
+      }
+      td {
+        width 120px
+        height 97px
+
+        &:first-child {
+          padding-right 60px
+          text-align right
+        }
+      }
+      tbody tr:hover {
+        td {
+          background-color brand-secondary
+        }
+      }
+    }
+  }
+}
+
+
+// Сквозной блок "Примечание" на странице закупочные цены
+
+.across-notification {
+  background-color #dbe7e6
+  padding 62px 60px 70px
+
+  .block-title {
+    text-align center
+    margin 0 0 40px
+    text-transform uppercase
+    font-weight 600
+    font-size 18px
+  }
+  .row {
+    clearfix()
+
+    .col {
+      width 360px
+      text-align center
+      float left
+      font-size 18px
+      line-height 23px
+
+      p {
+        margin-bottom 0
+      }
+    }
+    .icon {
+      width 100%
+      background-position center
+      margin-bottom 18px
+    }
+  }
+}
+
+
+// "Таблица сравнения" на странице закупочные цены
+
+.comparison-schedule {
+  padding 75px 0 127px
+
+  .block-title {
+    font-size 18px
+    line-height 23px
+    font-weight 900
+    text-transform uppercase
+    margin 0 auto 45px
+    width 780px
+  }
+  .block-body {
+    width 780px
+    margin 0 auto
+
+    table {
+      width 100%
+
+      td,
+      th {
+        width 33.3333334%
+        height 95px
+      }
+      tbody tr:hover {
+        td {
+          background-color brand-secondary
+        }
+      }
+    }
+  }
+}
+
+
+// Контент блок с колонками на странице закупочные цены
+
+.purchase-prices-info {
+  .row {
+    clearfix()
+
+    .col {
+      width 50%
+      float left
+
+      p {
+
+        &:last-child {
+          margin-bottom 0
+        }
+      }
+    }
+    .image-col {
+      img {
+        width 100%
+        img-responsive()
+      }
+    }
+    .content-col {
+      padding 40px 90px 0 60px
+      font-size 18px
+      line-height 23px
+
+      h2 {
+        position relative
+        font-size 36px
+        line-height 43px
+        text-transform uppercase
+        margin 0 -60px 48px 0
+        font-weight 900
+      }
+      .note {
+        display block
+        position relative
+        padding-left 60px
+        margin-bottom 36px
+
+        .icon {
+          position absolute
+          top 3px
+          left 0
+        }
+      }
+    }
+  }
+}
+
+
+// Сквозной блок "Преимущества продажи аккумуляторов" на странице закупочные цены
+
+.across-handower-advantages {
+  background-color #dbe7e6
+  padding 70px 60px 108px
+
+  .block-title {
+    text-align center
+    margin 0 0 80px
+    text-transform uppercase
+    font-weight 600
+    font-size 18px
+  }
+  .row {
+    clearfix()
+
+    .col {
+      width 330px
+      float left
+      margin-right 45px
+      font-size 18px
+      line-height 23px
+
+      &:last-child {
+        margin-right 0
+      }
+      p {
+        margin-bottom 0
+      }
+    }
+  }
+}
+
+
+// "Пункты приёма аккумуляторов"
+
+.our-service-station {
+  background-color #ecf5f4
+  padding-top 138px
+
+  .block-title {
+    font-size 36px
+    line-height 41px
+    text-align center
+    font-weight 900
+    margin 0 0 84px
+    text-transform uppercase
+  }
+  .map-holder {
+    background-color #757575
+    width 100%
+    height 607px
+
+    > ymaps {
+      width inherit
+      height inherit
+    }
+    ymaps[class$="-copyright"] {
+      display none
+    }
+  }
+}
+
+
+// "Таблица контактов и расписания" на странице пункты приёма
+
+.contacts-shedule {
+  background-color #ecf5f4
+  list-style none
+  margin 0
+  padding 46px 90px 40px
+  width 100%
+  font-size 18px
+  line-height 26px
+
+  li {
+    display inline-block
+    padding 6px 60px 10px
+
+    + li {
+      border-left 1px solid #9e9e9e
+    }
+    p:last-child {
+      margin-bottom 0
+    }
+  }
+}
+
+
+// "Наши контакты" на странице контакты
+
+.our-contacts {
+  width 100%
+  background-color #ecf5f4
+  padding-top 138px
+
+  .block-title {
+    font-size 36px
+    line-height 41px
+    text-align center
+    font-weight 900
+    margin 0 0 62px
+    text-transform uppercase
+  }
+  .block-body {
+    font-size: 18px;
+    line-height 23px
+    width 840px
+    margin 0 auto
+    text-align center
+    padding-bottom 25px
+
+    h3 {
+      font-size 48px
+      line-height 53px
+      margin 32px 0 0
+      font-weight 900
+      text-transform uppercase
+
+      small {
+        display block
+        text-transform none
+        font-weight normal
+        font-size 24px
+        margin-top 15px
+      }
+    }
+  }
+}
+
+
+// Блок "Отправка заявки"
+
+.application-req {
+  padding 57px 210px 64px
+
+  form {
+    clearfix()
+  }
+  .form-group {
+    @extend .handower-battery .form-group;
+  }
+  .btn-send-req {
+    @extend .handower-battery .btn-send-req;
+  }
+}
+
+
+// "Свидетельство ИП" на странице контакты
+
+.entrepreneur-certificate {
+  width 100%
+  background-color brand-secondary
+  padding 58px 122px 58px 83px
+
+  .row {
+    clearfix()
+
+    .col {
+      float left
+    }
+    .image-col {
+      width 253px
+      margin-right 85px
+    }
+    .content-col {
+      font-size 18px
+      line-height 23px
+      width 650px
+      padding-top 35px
+    }
+  }
+}
+
+
+// Каталог аккумуляторов
+
+.battery-catalog {
+  width 100%
+  background-color #ecf5f4
+  padding 138px 0 62px
+
+  .block-title {
+    font-size 36px
+    line-height 41px
+    text-align center
+    font-weight 900
+    margin 0 0 80px
+    text-transform uppercase
+  }
+  .block-body {
+    iframe {
+      width 100%
+      height auto
+      border none
+    }
+  }
+}
