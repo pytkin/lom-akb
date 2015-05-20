@@ -6,6 +6,7 @@
     "normalize.css": "~3.0.3",
     "owl.carousel": "*",
     "flickity": "~1.0.2",
-    "iframe-resizer": "~2.8.6"
+    "iframe-resizer": "~2.8.6",
+    "fancybox": "~2.1.5"
   }
 }

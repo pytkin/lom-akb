@@ -47,7 +47,7 @@ gulp.task('jscodestyle', function () {
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
-  return gulp.src('app/*.html')
+  return gulp.src('app/**/*.html')
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csscomb()))
@@ -123,7 +123,7 @@ gulp.task('wiredep', function () {
 });
 
 gulp.task('build', ['jscodestyle', 'html', 'images', 'fonts', 'extras'], function () {
-  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: false}));
 });
 
 gulp.task('default', ['clean'], function () {

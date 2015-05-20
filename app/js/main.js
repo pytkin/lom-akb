@@ -22,7 +22,9 @@ $(function () {
     myMap.geoObjects.add(myPlacemark);
   }
 
-  ymaps.ready(initLocationMap);
+  if (ymaps) {
+    ymaps.ready(initLocationMap);
+  }
 
   // Ресайз iframe под высоту контента
   if ($('iframe').length) {
@@ -31,5 +33,19 @@ $(function () {
     });
   }
 
+  $('.js-fancybox-modal').fancybox({
+    type: 'ajax',
+    padding: 0,
+    margin: 0,
+    autoSize: true,
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    },
+    tpl: {
+      closeBtn : '<a title="Закрыть" class="fancybox-item fancybox-close" href="javascript:;">&#10005;</a>'
+    }
+  });
 
 });

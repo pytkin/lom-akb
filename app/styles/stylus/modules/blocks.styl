@@ -279,6 +279,7 @@
     font-size 48px
     line-height 38px
     font-weight 800
+    color #000
 
     small {
       font-size 24px
@@ -286,6 +287,7 @@
       font-weight normal
       display block
       margin-bottom 20px
+      color #000
     }
   }
   form {
@@ -716,6 +718,103 @@
       width 100%
       height auto
       border none
+    }
+  }
+}
+
+
+// Форма заказа обратного звонка
+
+.call-req-form {
+  padding 59px 59px 69px 61px
+
+  .block-title {
+    text-transform uppercase
+    font-size 36px
+    line-height 40px
+    color #000
+    margin 0 0 70px
+    font-weight 900
+    text-align center
+  }
+  .sub-title {
+    text-align center
+    font-size 48px
+    line-height 38px
+    font-weight 800
+    color #000
+
+    small {
+      font-size 24px
+      line-height 1
+      font-weight normal
+      display block
+      margin-bottom 20px
+      color #000
+    }
+  }
+  form {
+    clearfix()
+    margin-bottom 57px
+  }
+  .form-group {
+    width 240px
+    float left
+    margin-right 30px
+  }
+  .btn-send-req {
+    position relative
+    display block
+    float left
+    height 45px
+    background-color brand-primary
+    color #fff
+    text-align center
+    padding-left 45px
+    line-height 45px
+    width 240px
+    font-weight 600
+    text-transform uppercase
+    border none
+
+    &:before {
+      position absolute
+      content ''
+      top 0
+      left 0
+      background url(../img/paper-plane-icon.png) center no-repeat #3da528
+      width 45px
+      height 45px
+    }
+    &:hover,
+    &:focus {
+      text-decoration none
+    }
+  }
+}
+
+
+// "Форма успешно отправлена"
+
+.modal-form-success {
+  padding 59px 59px 69px 61px
+
+  .block-title {
+    text-transform uppercase
+    font-size 36px
+    line-height 40px
+    color #000
+    margin 0 0 23px
+    font-weight 900
+    text-align center
+  }
+  .block-body {
+    text-align center
+    font-size 18px
+    line-height 23px
+
+    p:last-child {
+      margin-bottom 0
     }
   }
 }
